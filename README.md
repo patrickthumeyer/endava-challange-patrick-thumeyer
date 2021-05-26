@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Endava Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Frontend Challenge (HTML/CSS/JS) "GitHub Resumé"
 
-## Available Scripts
+Thank you for accepting the challenge!
+Please implement a Single Page-Application that let users build a GitHub resumé
+similiar to https://resume.github.io/.
 
-In the project directory, you can run:
+## Requirements
 
-### `npm start`
+- Create a landing page where the user can enter his or her GitHub account name.
+- Implement the provided design
+- Implement a “generate button” on the landing page that starts processing the
+  previously entered account name and shows a result view to the user (the generated
+  resumé).
+- The result view consists of the following:
+- Very basic GitHub profile information
+- A summary of which programming languages the GitHub account owner has used in
+  his/her repositories (with percentage).
+- A list of the most popular repositories of the GitHub account owner with title, repository
+  description and the amount of stars and forks.
+- Implement a kind of model that connects the data to the given HTML / JavaScript
+  template. You may use a view framework like React or Vue but this is not mandatory.
+- Make sure to use the official GitHub API, please don't start parsing web pages
+  manually.
+- Stick to the given design as best as you can. Please do not use any CSS framework like
+  Bootstrap or Foundation.
+- The mark-up should fulfill basic accessibility standards. For example, form fields should
+  be associated with a label, alt tags should be used. For keyboard operability there are
+  bonus points.
+- Please make sure that the markup is W3C valid and semantically correct. You can
+  ignore errors caused by accessible attributes.
+- The layout should work in newest versions of Safari, Chrome, Firefox, Edge - and of
+  course Internet Explorer 11 :)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Please create a private repository on github.com named like “challenge-{firstname-lastname}” for the task and invite endava-frontend-challenge (at Settings->Collaborators), so that our developers can have a look at it.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions please feel free to contact us!
+Good luck and many thanks in advance!
