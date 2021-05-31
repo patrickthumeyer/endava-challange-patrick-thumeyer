@@ -16,11 +16,12 @@ const Form = ({ user, setUser, getUserData }) => {
   return (
     <div className="form_wrapper">
       <h1>_</h1>
-      <h1>MY GITHUB RESUMÉ</h1>
+      <h1 className="form_wrapper_headline">MY GITHUB RESUMÉ</h1>
       <form onSubmit={submitHandler}>
         <label htmlFor="user-name">GITHUB USERNAME</label>
-        <div>
+        <div className="form_wrapper_input_wrapper">
           <input
+            className="form_wrapper_input_wrapper_input"
             type="text"
             name="user-name"
             placeholder="John Doe"
@@ -28,7 +29,11 @@ const Form = ({ user, setUser, getUserData }) => {
             onChange={handleInput}
             required
           ></input>
-          <input type="submit" value="GENERATE"></input>
+          <input
+            className="form_wrapper_input_wrapper_button"
+            type="submit"
+            value="GENERATE"
+          ></input>
         </div>
       </form>
     </div>

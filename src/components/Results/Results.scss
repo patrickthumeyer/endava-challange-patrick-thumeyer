@@ -1,2 +1,30 @@
-.results_wrapper {
+.wrapper {
+  padding: 30px;
+
+  .results_wrapper {
+    &_name {
+      font-weight: 600;
+    }
+
+    &_bio {
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    &_website {
+      text-decoration: none;
+      color: rgb(252, 81, 81);
+    }
+
+    &_description {
+      font-weight: 300;
+      margin: 20px 0;
+    }
+  }
+
+  .languages_wrapper {
+    &_name {
+      font-weight: 500;
+    }
+  }
 }

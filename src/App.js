@@ -13,17 +13,10 @@ function App() {
       .then((data) => setUserData(data));
   };
 
-  // useEffect(() => {
-  //   getUserData();
-  // }, []);
-
-  // console.log(user);
-  // console.log(userData);
-
   return (
     <div className="App">
       <Form setUser={setUser} user={user} getUserData={getUserData} />
-      <Results userData={userData} />
+      {userData ? <Results userData={userData} /> : null}
     </div>
   );
 }
