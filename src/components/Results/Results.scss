@@ -1,7 +1,6 @@
 .wrapper {
-  padding: 30px;
-
   .results_wrapper {
+    padding: 0 30px;
     &_name {
       font-weight: 600;
     }
@@ -23,8 +22,56 @@
   }
 
   .languages_wrapper {
+    padding: 0 30px;
     &_name {
       font-weight: 500;
+    }
+  }
+
+  .repos_wrapper {
+    &_underline {
+      padding: 0 30px;
+    }
+
+    &_name {
+      font-weight: 500;
+      padding: 0 30px;
+      margin-bottom: 20px;
+    }
+
+    &_repo {
+      padding: 20px 30px;
+
+      &_description {
+        margin-bottom: 10px;
+        font-weight: 300;
+      }
+
+      &_info {
+        font-weight: 300;
+      }
+
+      &:nth-child(odd) {
+        background-color: #f3f3f3;
+      }
+      &_header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        &_name {
+          color: rgb(252, 81, 81);
+          font-weight: 600;
+        }
+
+        &_date {
+          font-weight: 600;
+        }
+      }
+      &_link {
+        color: rgb(252, 81, 81);
+        text-decoration: none;
+      }
     }
   }
 }

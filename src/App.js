@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Form setUser={setUser} user={user} getUserData={getUserData} />
-      {userData ? <Results userData={userData} /> : null}
+      <Results userData={userData} />
     </div>
   );
 }
