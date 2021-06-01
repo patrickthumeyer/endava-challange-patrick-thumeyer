@@ -18,6 +18,10 @@ const Results = ({ userData }) => {
   console.log("repos", repos);
   console.log("====================================");
 
+  console.log("====================================");
+  console.log(userData);
+  console.log("====================================");
+
   return userData.login ? (
     <div className="wrapper">
       <div className="results_wrapper">
@@ -60,6 +64,7 @@ const Results = ({ userData }) => {
                     {repo.created_at.slice(0, 4)}-{repo.updated_at.slice(0, 4)}
                   </h2>
                 </div>
+                <p className="repos_wrapper_repo_language">{repo.language}</p>
                 <p className="repos_wrapper_repo_description">
                   {repo.description}
                 </p>
