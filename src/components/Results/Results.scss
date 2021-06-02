@@ -28,6 +28,16 @@
     }
   }
 
+  .language_wrapper {
+    margin-top: 10px;
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+  }
+
   .repos_wrapper {
     &_underline {
       padding: 0 30px;

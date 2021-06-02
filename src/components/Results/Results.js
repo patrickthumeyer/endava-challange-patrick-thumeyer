@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Line } from "rc-progress";
 import "./Results.scss";
 
 const Results = ({ userData }) => {
@@ -14,13 +15,86 @@ const Results = ({ userData }) => {
     getRepos();
   }, [userData]);
 
-  console.log("====================================");
-  console.log("repos", repos);
-  console.log("====================================");
+  const languages = (repos) => {
+    let languagesArray = [];
 
-  console.log("====================================");
-  console.log(userData);
-  console.log("====================================");
+    repos.map((repo) => {
+      if (languagesArray.hasOwnProperty(repo.language)) {
+        languagesArray[repo.language] = languagesArray[repo.language] + 1;
+      } else {
+        languagesArray[repo.language] = 1;
+      }
+    });
+
+    const sum = Object.values(languagesArray).reduce(
+      (acc, val) => acc + val,
+      0
+    );
+
+    const keys = Object.keys(languagesArray).map((key) => key);
+    const values = Object.values(languagesArray).map((value) => {
+      return (100 * value) / sum;
+    });
+
+    return (
+      <>
+        {keys[0] ? (
+          <div className="language_wrapper">
+            <div className="language_wrapper_header">
+              <p>{keys[0]}</p>
+              <p>{values[0]}%</p>
+            </div>
+            <Line percent={values[0]} strokeColor="rgb(252, 81, 81)" />
+          </div>
+        ) : null}
+        {keys[1] ? (
+          <div className="language_wrapper">
+            <div className="language_wrapper_header">
+              <p>{keys[1]}</p>
+              <p>{values[1]}%</p>
+            </div>
+            <Line percent={values[1]} strokeColor="rgb(252, 81, 81)" />
+          </div>
+        ) : null}
+        {keys[2] ? (
+          <div className="language_wrapper">
+            <div className="language_wrapper_header">
+              <p>{keys[2]}</p>
+              <p>{values[2]}%</p>
+            </div>
+            <Line percent={values[2]} strokeColor="rgb(252, 81, 81)" />
+          </div>
+        ) : null}
+        {keys[3] ? (
+          <div className="language_wrapper">
+            <div className="language_wrapper_header">
+              <p>{keys[3]}</p>
+              <p>{values[3]}%</p>
+            </div>
+            <Line percent={values[3]} strokeColor="rgb(252, 81, 81)" />
+          </div>
+        ) : null}
+        {keys[4] ? (
+          <div className="language_wrapper">
+            <div className="language_wrapper_header">
+              <p>{keys[4]}</p>
+              <p>{values[4]}%</p>
+            </div>
+            <Line percent={values[4]} strokeColor="rgb(252, 81, 81)" />
+          </div>
+        ) : null}
+        {keys[5] ? (
+          <div className="language_wrapper">
+            <div className="language_wrapper_header">
+              <p>{keys[5]}</p>
+              <p>{values[5]}%</p>
+            </div>
+            <Line percent={values[5]} strokeColor="rgb(252, 81, 81)" />
+          </div>
+        ) : null}
+      </>
+    );
+  };
 
   return userData.login ? (
     <div className="wrapper">
@@ -47,6 +121,7 @@ const Results = ({ userData }) => {
       <div className="languages_wrapper">
         <h1>__</h1>
         <h2 className="languages_wrapper_name">Languages</h2>
+        {languages(repos)}
       </div>
 
       <div className="repos_wrapper">
