@@ -42,7 +42,7 @@ const Results = ({ userData }) => {
           <div className="language_wrapper">
             <div className="language_wrapper_header">
               <p>{keys[0]}</p>
-              <p>{values[0]}%</p>
+              <p>{values[0].toFixed(1)}%</p>
             </div>
             <Line percent={values[0]} strokeColor="rgb(252, 81, 81)" />
           </div>
@@ -51,7 +51,7 @@ const Results = ({ userData }) => {
           <div className="language_wrapper">
             <div className="language_wrapper_header">
               <p>{keys[1]}</p>
-              <p>{values[1]}%</p>
+              <p>{values[1].toFixed(1)}%</p>
             </div>
             <Line percent={values[1]} strokeColor="rgb(252, 81, 81)" />
           </div>
@@ -60,7 +60,7 @@ const Results = ({ userData }) => {
           <div className="language_wrapper">
             <div className="language_wrapper_header">
               <p>{keys[2]}</p>
-              <p>{values[2]}%</p>
+              <p>{values[2].toFixed(1)}%</p>
             </div>
             <Line percent={values[2]} strokeColor="rgb(252, 81, 81)" />
           </div>
@@ -69,7 +69,7 @@ const Results = ({ userData }) => {
           <div className="language_wrapper">
             <div className="language_wrapper_header">
               <p>{keys[3]}</p>
-              <p>{values[3]}%</p>
+              <p>{values[3].toFixed(1)}%</p>
             </div>
             <Line percent={values[3]} strokeColor="rgb(252, 81, 81)" />
           </div>
@@ -78,7 +78,7 @@ const Results = ({ userData }) => {
           <div className="language_wrapper">
             <div className="language_wrapper_header">
               <p>{keys[4]}</p>
-              <p>{values[4]}%</p>
+              <p>{values[4].toFixed(1)}%</p>
             </div>
             <Line percent={values[4]} strokeColor="rgb(252, 81, 81)" />
           </div>
@@ -87,9 +87,27 @@ const Results = ({ userData }) => {
           <div className="language_wrapper">
             <div className="language_wrapper_header">
               <p>{keys[5]}</p>
-              <p>{values[5]}%</p>
+              <p>{values[5].toFixed(1)}%</p>
             </div>
             <Line percent={values[5]} strokeColor="rgb(252, 81, 81)" />
+          </div>
+        ) : null}
+        {keys[6] ? (
+          <div className="language_wrapper">
+            <div className="language_wrapper_header">
+              <p>{keys[6]}</p>
+              <p>{values[6].toFixed(1)}%</p>
+            </div>
+            <Line percent={values[6]} strokeColor="rgb(252, 81, 81)" />
+          </div>
+        ) : null}
+        {keys[7] ? (
+          <div className="language_wrapper">
+            <div className="language_wrapper_header">
+              <p>{keys[7]}</p>
+              <p>{values[7].toFixed(1)}%</p>
+            </div>
+            <Line percent={values[7]} strokeColor="rgb(252, 81, 81)" />
           </div>
         ) : null}
       </>
@@ -114,7 +132,8 @@ const Results = ({ userData }) => {
             userData.login
           } is a developer based in ${userData.location} with ${
             userData.public_repos
-          } public repositories and ${userData.followers} followers.`}
+          } public repositories and ${userData.followers} followers.
+          `}
         </p>
       </div>
 
